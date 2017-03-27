@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2009-2014 SAP SE, All Rights Reserved -->
+<chip xmlns="http://schemas.sap.com/sapui2/services/Chip/1">
+    <implementation>
+        <sapui5>
+            <basePath>../zcustomtilechip</basePath>
+            <viewName>customtilechips.harvy.view.xml</viewName>
+        </sapui5>
+    </implementation>
+    <appearance>
+        <title>Harvy Chart</title>
+        <description>Dynamic Harvy Micro Chip</description>
+    </appearance>
+    <contracts>
+        <consume id="configuration">
+            <parameters>
+                <parameter name="tileConfiguration"></parameter>
+            </parameters>
+        </consume>
+        <consume id="preview" />
+        <consume id="writeConfiguration" />
+        <consume id="configurationUi" />
+        <consume id="search" />
+        <consume id="refresh" />
+        <consume id="visible" />
+        <consume id="bag" />
+        <consume id="url" />
+        <consume id="actions" />
+    </contracts>
+</chip>

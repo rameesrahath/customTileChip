@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<core:View 
+		xmlns="sap.suite.ui.commons" 
+		xmlns:ui="sap.suite.ui.commons" 
+		xmlns:core="sap.ui.core" 
+		controllerName="customtilechips.column">
+		
+     <GenericTile 
+  	 	id="columnMicro"
+	 	press="onPress" 
+	 	header="{/config/display_title_text}" 
+	 	subheader="{/config/display_subtitle_text}" 
+	 	frameType="TwoByOne">
+        <tileContent>
+        	<TileContent footer="{/config/display_info_text}">
+            	<content>
+                	<ui:ColumnMicroChart>
+                	<ui:columns>
+                	<ui:ColumnData value="60" color="Good"/>
+                	<ui:ColumnData value="20" color="Error"/>
+                	<ui:ColumnData value="80" color="Good"/>
+                	<ui:ColumnData value="40" color="Neutral"/>
+                	</ui:columns>
+                	
+                	</ui:ColumnMicroChart>
+					
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	
+</core:View>
